@@ -1,3 +1,23 @@
 {
-	"files": ["public/**/*", "src/**/*.{html,js,ts,jsx,tsx}"]
-}
+   "version": 2,
+   "builds": [
+     {
+       "src": "index.js",
+       "use": "@vercel/node"
+     }
+   ],
+   "routes": [
+     {
+       "src": "/(.*)",
+       "dest": "/index.js"
+     }
+   ],
+   "env": {
+     "MY_VAR": "hello world"
+   },
+   "public": true,
+   "files": [
+     "public/**/*",
+     "src/**/*.{html,js,ts,jsx,tsx}"
+   ]
+ }
