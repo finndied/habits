@@ -1,0 +1,91 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.reactDatepicker {
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	width: 100px;
+	color: black;
+	opacity: 0.3;
+	border: none;
+	outline: none;
+	cursor: default;
+}
+
+
+.modal {
+   border: 1px solid rgb(62, 39, 208);
+	border-left: 1px solid rgb(5, 7, 119);
+	border-top: 1px solid rgb(0, 4, 255);
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 40%;
+	left: 50%;
+	width: 350px;
+	background: white;
+	padding: 4em 0em 4em 0.5em;
+	height: 200px;
+	border-radius: 20px;
+	backdrop-filter: blur(10px);
+   box-shadow: 10px 10px 60px -6px rgb(5, 18, 44);
+   transition: all 0.3s ease 0s;
+	opacity: 0;
+	transform: translate(110px);
+	pointer-events: none;
+}
+
+.modalClose {
+   position: absolute;
+   right: 0;
+	top: 0;
+	margin: 20px;
+   cursor: pointer;
+}
+
+
+.modal.active {
+	opacity: 1;
+	pointer-events: all;
+	transform: translate(-175px);
+}
+.modalContent input {
+   display: grid;
+   outline: none;
+	background: transparent;
+	width: 200px;
+	padding: 14px;
+	margin-bottom: 1em;
+	border: 1px solid rgb(173, 173, 173);
+	border-radius: 5000px;
+	backdrop-filter: blur(5px);
+	box-shadow: 4px 4px 50px rgba(47, 35, 155, 0.2);
+	color: rgb(5, 18, 44);
+	font-weight: 500;
+	transition: all 0.2s ease-in-out;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modalContent button {
+	font-family: 'SofiaSans', sans-serif;
+	padding: 14px 50px;
+	font-size: 15px;
+	cursor: pointer;
+   font-weight: 400;
+	border-radius: 36px;
+	color: white;
+	background-color: rgb(64, 122, 237);
+	border-style: none;
+}
+
+.modalContent button:hover  {
+   background-color: rgb(42, 86, 174);
+}

@@ -1,0 +1,15 @@
+.myButton {
+   font-family: 'Varela Round', sans-serif;
+   padding: 20px 55px;
+   font-size: 15px;
+   cursor: pointer;
+   border-radius: 36px;
+   color: white;
+   background-color: rgb(64, 122, 237);
+   border-style: none;
+   margin-top: 20px;
+}
+
+.myButton:hover {
+   background-color: rgb(42, 86, 174);
+}
