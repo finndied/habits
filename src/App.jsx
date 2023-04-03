@@ -10,7 +10,7 @@ function App() {
 			
 			<Routes>
 				{/* <Route path='/' props={true} element={<FirstPage />}/> */}
-				<Route path='/MainPage' props={true} element={<MainPage />}/>
+				<Route path='/' props={true} element={<MainPage />}/>
 				<Route path='/CreateHabits' props={true} element={<CreateHabits  />}/>
 			</Routes>
 			
