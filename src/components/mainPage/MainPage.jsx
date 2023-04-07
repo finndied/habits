@@ -127,22 +127,22 @@ const MainPage = () => {
 			<div className={cl.mainPage}>
 				<MyDatePicker />
 				<div className={cl.yellowCircle}>
-					<img src='public/yellow-circle.svg' alt='' />
+					<img src='img/yellow-circle.svg' alt='' />
 				</div>
 				<div className={cl.blueCircle}>
-					<img src='public/blue-circle.svg' alt='' />
+					<img src='img/blue-circle.svg' alt='' />
 				</div>
 				<h1 className={cl.title}>
 					Let`s make a <br /> habits together
 					<div className={cl.smile}>
-						<img src='public/smile.svg' alt='' />
+						<img src='img/smile.svg' alt='' />
 					</div>
 				</h1>
 				<div className={cl.wrapperGoals}>
 					<ProgressBar completed={completedCount} total={totalCount} />
 					<div className={cl.goalsText}>
 						Your daily goals <br /> almost done!{' '}
-						<img src='public/fire.svg' />
+						<img src='img/fire.svg' />
 						<div className={cl.goalsCompleted}>
 							{completedHabitsCount} of {habits.length} completed
 						</div>
@@ -151,7 +151,7 @@ const MainPage = () => {
 				<div className={styles.HabitsWrapper}>
 					<div className={styles.habitsParams}>
 						<div className={cl.light}>
-							<img src='public/light.svg' alt='' />
+							<img src='img/light.svg' alt='' />
 						</div>
 						Today Habits
 						<button
